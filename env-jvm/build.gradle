@@ -17,12 +17,12 @@ sourceCompatibility = 1.8
 version = '1.0'
 
 springBoot {
-    mainClass = 'io.corgi.ScanList'
+    mainClass = 'envjvm.EnvJvm'
 }
 
 repositories {
     jcenter()
-    maven { url 'https://simplicityitself.artifactoryonline.com/simplicityitself/repo' }
+    maven { url 'https://simplicityitself.artifactoryonline.com/simplicityitself/muon' }
 }
 
 dependencies {

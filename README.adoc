@@ -6,3 +6,18 @@ It gives a well known set of services that deliver a representative set of funct
 
 This currently contains 2 services, `env-node` and env-jvm` that have a set of endpoints that self describe what they give you. Check the introspection reports for more information.
 
+## Event Hammer
+
+`env-node` contains a system that can be used to abuse an event store by pouring events in a very tight
+loop.
+
+To start
+```
+muon rpc rpc://env-node/start-event-hammer
+```
+
+To stop
+
+```
+muon rpc rpc://env-node/stop-event-hammer
+```

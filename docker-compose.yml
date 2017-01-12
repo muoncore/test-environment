@@ -1,0 +1,22 @@
+version: '2'
+services:
+
+#Application services
+  env-node:
+    build: ./env-node
+    external_links:
+      - rabbitmq
+    networks:
+      - muon
+  env-jvm:
+    build: ./env-jvm
+    external_links:
+      - rabbitmq
+    networks:
+      - muon
+    environment:
+      - MUON_URL=amqp://muon:microservices@rabbitmq
+
+networks:
+  muon:
+    external: true
