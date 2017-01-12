@@ -1,0 +1,8 @@
+# Muon Test Environment
+
+This repo contains a set of services that can be used in functional and non functional checks of Muon libraries.
+
+It gives a well known set of services that deliver a representative set of functionality.
+
+This currently contains 2 services, `env-node` and env-jvm` that have a set of endpoints that self describe what they give you. Check the introspection reports for more information.
+
