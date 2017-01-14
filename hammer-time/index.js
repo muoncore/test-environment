@@ -30,7 +30,7 @@ function subscribe() {
 function eventHammer() {
   if (running) return
 
-  var ratePersecond = 10
+  var ratePersecond = 30
 
   running = true
   var idx = 0
@@ -62,5 +62,5 @@ function eventHammer() {
 //wait to settle so we don't overload muon node CSP channels
 setTimeout(function() {
   subscribe()
-  eventHammer()
+  setTimeout(eventHammer, 500)
 }, 6000)
